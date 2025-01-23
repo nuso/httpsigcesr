@@ -1,4 +1,4 @@
-module github.com/Wavecrest/httpsigcesr
+module github.com/nuso/httpsigcesr
 
 go 1.22.0
 

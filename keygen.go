@@ -4,8 +4,9 @@ import (
 	"crypto/ed25519"
 	"crypto/rand"
 	"encoding/pem"
-	"github.com/Wavecrest/httpsigcesr/cesr"
 	"os"
+
+	"github.com/nuso/httpsigcesr/cesr"
 )
 
 func savePrivateKeyToFile(privateKey ed25519.PrivateKey, filename string) error {
