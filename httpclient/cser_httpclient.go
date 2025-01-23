@@ -5,9 +5,10 @@ import (
 	"context"
 	"crypto/ed25519"
 	"encoding/json"
-	"github.com/Wavecrest/httpsigcesr/digest"
-	"github.com/Wavecrest/httpsigcesr/signature"
 	"net/http"
+
+	"github.com/nuso/httpsigcesr/digest"
+	"github.com/nuso/httpsigcesr/signature"
 )
 
 var (
@@ -36,7 +37,7 @@ func (csc *CserSignedClient) SendSignedRequest(c context.Context, method string,
 	if err != nil {
 		return nil, err
 	}
-	// // digest is url-safe Base64-encoded without padding 
+	// // digest is url-safe Base64-encoded without padding
 	err = digest.AddDigest(req, digest.DigestSha256, bodyBytes, false)
 	if err != nil {
 		return nil, err

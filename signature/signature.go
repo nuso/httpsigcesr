@@ -3,10 +3,11 @@ package signature
 import (
 	"crypto/ed25519"
 	"fmt"
-	"github.com/Wavecrest/httpsigcesr/cesr"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/nuso/httpsigcesr/cesr"
 )
 
 type SignatureData struct {
