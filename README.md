@@ -12,7 +12,7 @@ import (
 	"context"
 	"encoding/pem"
 	"fmt"
-	"github.com/Wavecrest/httpsigcesr/httpclient"
+	"github.com/nuso/httpsigcesr/httpclient"
 	"os"
 )
 
